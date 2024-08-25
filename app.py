@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from streamlit_chat import message
 import time
-from ingest import *
+import os
+from ingest import get_pdf_text, get_text_chunk, get_vectorstore, get_user_input, clear_database, displayPDF
 
 
 
